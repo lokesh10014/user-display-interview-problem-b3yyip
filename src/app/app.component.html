@@ -1,0 +1,36 @@
+<p>
+  User display, sort and filter interview problem
+</p>
+<ul>
+  <li>
+    Implement an application to get users data from
+    <a href="https://jsonplaceholder.typicode.com/users">here</a> and display
+    their name, email, city and company name.
+  </li>
+  <li>
+    Sort the users alphabetically by city.
+  </li>
+  <li>
+    Implement a search feature which searches the users by
+    name/email/city/company name.
+  </li>
+  <li>Bonus: Style the table</li>
+</ul>
+
+<h2>User details</h2>
+<div>(Completed user info screen with table layout by lokesh)</div>
+<input #searchInput/><button (click)="search(searchInput)">Search</button>
+<div class="user-table">
+  <div class="user-table-header">
+    <div class="user-table-cell">Name</div>
+    <div class="user-table-cell">Email</div>
+    <div class="user-table-cell">City</div>
+    <div class="user-table-cell">Company</div>
+  </div>
+  <div *ngFor="let user of userInfo" class="user-row">
+    <div class="user-table-cell">{{user.name}}</div>
+    <div class="user-table-cell">{{user.email}}</div>
+    <div class="user-table-cell">{{user.address.city}}</div>
+    <div class="user-table-cell">{{user.company.name}}</div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+p {
+  font-family: Lato;
+}
+
+.user-table {
+  margin: 10px;
+  width: 100%;
+  display: table;
+}
+
+.user-table-header {
+  display: table-header-group;
+  background-color: gray;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.user-row {
+  display: table-row;
+}
+
+.user-table-cell {
+  display: table-cell;
+}
